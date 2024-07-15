@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=AppDados
+comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ AppDados\ aqui.\r\n\ \r\n\ @author\ F\u00E1bio\ Rodrigues\r\n\ @version\ 1.0.0\r\n
+comment1.params=
+comment1.target=AppDados()
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ AppDados\r\n
+comment2.params=
+comment2.target=void\ app()
+comment2.text=\r\n\ M\u00E9todo\ app\r\n\r\n
+comment3.params=size
+comment3.target=int\ dado(int)
+comment3.text=\r\n\ M\u00E9todo\ dado\r\n\r\n\ @param\ size\ Um\ par\u00E2metro\r\n\ @return\ O\ valor\ de\ retorno\r\n
+numComments=4
