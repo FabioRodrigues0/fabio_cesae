@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header_logo {
+    min-width: 50%;
+    max-width: 300px;
+    display: inline-block;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+
+.topnav {
+    display: table;
+    table-layout: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+
+.topnav .table_cell {
+    display: table-cell;
+}
+
+.topnav nav {
+    position: static;
+
+}
+
+.topnav #myLinks_menu {
+    display: none;
+}
+
+.topnav #myLinks {
+    display: flex;
+    list-style: none;
+}
+
+.topnav a {
+    color: #25183e;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    font-weight: 600;
+}
+
+.topnav a.icon {
+    /* background: #25183e; */
+    color: #25183e;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a.icon:hover {
+    background-color: #ddd;
+    color: #007cba;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: #007cba;
+}
+
+.container_img_sobre {
+    background-image: url("../assets/topo.jpg");
+    background-size: cover;
+}
+
+.container_text_sobre {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(45, 51, 57, .75);
+    min-height: 435px;
+    align-items: end;
+}
+
+.text_sobre {
+    color: #fff;
+    text-align: left;
+}
