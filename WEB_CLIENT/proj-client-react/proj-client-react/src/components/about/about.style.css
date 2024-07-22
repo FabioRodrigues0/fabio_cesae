@@ -1,0 +1,16 @@
+.about-ajust {
+    min-width: 80% !important;
+}
+.about-ajust-items {
+    padding-top: 0rem !important;
+}
+
+.about-img-ajust {
+    object-fit: cover !important;
+}
+
+.about-div-img-ajust {
+    margin-right: 0 !important;
+    object-fit: cover !important;
+
+}

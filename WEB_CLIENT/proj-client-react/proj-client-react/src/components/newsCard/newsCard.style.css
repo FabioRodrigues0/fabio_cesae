@@ -1,0 +1,13 @@
+.card-ajust {
+    object-fit: cover;
+    min-height: 350px !important;
+}
+
+.img-ajust{
+    object-fit: cover;
+    min-height: 200px !important;
+}
+
+.date-cards {
+    float: right !important;
+}
