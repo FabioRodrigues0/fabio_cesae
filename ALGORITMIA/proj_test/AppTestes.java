@@ -1,6 +1,7 @@
 // Definição de classe AppTestes
 class AppTestes
 {
+
     // Definição da função Construtora (Constructor)
     AppTestes()
     {

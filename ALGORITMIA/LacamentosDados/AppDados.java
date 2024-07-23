@@ -8,6 +8,10 @@ import java.util.Scanner;
  */
 public class AppDados
 {
+    // variavel global a class
+    int valor = 6;
+    
+    
     /**
      * Construtor para objetos da classe AppDados
      */
@@ -28,16 +32,16 @@ public class AppDados
             // int input = read.nextInt();
             // System.out.println("O numero gerado foi: " + dado(input)); 
         // };
-        System.out.println("O numero gerado foi: " + dado(6)); 
-        System.out.println("O numero gerado foi: " + dado(6)); 
-        System.out.println("O numero gerado foi: " + dado(6)); 
-        System.out.println("O numero gerado foi: " + dado(6)); 
-        System.out.println("O numero gerado foi: " + dado(6)); 
+        System.out.println("O numero gerado foi: " + dado(6));
+        System.out.println("O numero gerado foi: " + dado(8));
+        System.out.println("O numero gerado foi: " + dado(8));
+        System.out.println("O numero gerado foi: " + dado(20));
+        System.out.println("O numero gerado foi: " + dado(20));
     }
     /**
      * Método dado
      *
-     * @param size Um parâmetro
+     * @param size Um parâmetro inteiro que indica qual tamanho do dado que irá lançar
      * @return O valor de retorno
      */
     int dado(int size)
