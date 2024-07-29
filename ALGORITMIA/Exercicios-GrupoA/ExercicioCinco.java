@@ -1,10 +1,5 @@
 import java.util.Scanner;
-/**
- * Escreva uma descrição da classe ExercicioCinco aqui.
- * 
- * @author (seu nome) 
- * @version (um número da versão ou uma data)
- */
+
 public class ExercicioCinco
 {
     Scanner read = new Scanner(System.in);
