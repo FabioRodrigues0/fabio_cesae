@@ -1,7 +1,15 @@
 #BlueJ class context
 comment0.target=ExemplosA
+<<<<<<< HEAD
 comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ ExemplosA\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
 comment1.params=
 comment1.target=ExemplosA()
 comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ ExemplosA\r\n
 numComments=2
+=======
+comment1.params=
+comment1.target=ExemplosA()
+comment2.params=
+comment2.target=boolean\ retornoBool()
+numComments=3
+>>>>>>> 3774f216b78cdc090bc2af16e1a8bbdf676427eb

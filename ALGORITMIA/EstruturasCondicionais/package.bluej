@@ -1,4 +1,5 @@
 #BlueJ package file
+<<<<<<< HEAD
 editor.fx.0.height=1039
 editor.fx.0.width=1294
 editor.fx.0.x=-7
@@ -13,6 +14,22 @@ package.editor.x=1273
 package.editor.y=0
 package.frame.height=1039
 package.frame.width=654
+=======
+editor.fx.0.height=863
+editor.fx.0.width=1415
+editor.fx.0.x=303
+editor.fx.0.y=98
+objectbench.height=273
+objectbench.width=760
+package.divider.horizontal=0.6
+package.divider.vertical=0.44
+package.editor.height=213
+package.editor.width=638
+package.editor.x=15
+package.editor.y=42
+package.frame.height=600
+package.frame.width=800
+>>>>>>> 3774f216b78cdc090bc2af16e1a8bbdf676427eb
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
@@ -28,5 +45,10 @@ target1.name=ExemplosA
 target1.showInterface=false
 target1.type=ClassTarget
 target1.width=120
+<<<<<<< HEAD
 target1.x=70
 target1.y=10
+=======
+target1.x=198
+target1.y=77
+>>>>>>> 3774f216b78cdc090bc2af16e1a8bbdf676427eb
