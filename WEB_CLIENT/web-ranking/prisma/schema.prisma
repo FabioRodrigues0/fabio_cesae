@@ -1,0 +1,47 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Repos {
+  id           Int                @id @default(autoincrement())
+  url          String?            @unique
+  name         String             @unique
+  course       String?
+  designNote   Int?
+  codeNote     Int?
+  lines        Int
+  contributors ContributorRepos[]
+  createdAt    DateTime           @default(now())
+  updatedAt    DateTime           @updatedAt
+}
+
+model ContributorRepos {
+  id              Int         @id @default(autoincrement())
+  points          Float?
+  contribution    Float
+  editLines       Int
+  deletedLines    Int
+  repos           Repos       @relation(fields: [repoName], references: [name])
+  contributor     Contributor @relation(fields: [contributorName], references: [name])
+  repoName        String
+  contributorName String
+  avatar_url      String
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+}
+
+model Contributor {
+  id               Int                @id @default(autoincrement())
+  name             String             @unique
+  ContributorRepos ContributorRepos[]
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+}
