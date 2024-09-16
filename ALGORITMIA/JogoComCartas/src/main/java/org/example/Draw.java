@@ -3,28 +3,44 @@ package org.example;
 import java.util.ArrayList;
 
 public class Draw {
-    private ArrayList<Carta> cartasMao;
-    Baralho baralho;
+    private ArrayList<Card> cartHand;
+    Pack pack;
     public Draw() {
-        baralho = new Baralho();
-        baralho.setCartas();
+        pack = new Pack();
+        pack.setCartas();
     }
-    public ArrayList<Carta> mao(int numCartas) {
-        cartasMao = new ArrayList<>();
+    public ArrayList<Card> hand(int numCartas) {
+        cartHand = new ArrayList<>();
         boolean exit = true;
         for (int i = 0; i < numCartas + 1; i++) {
-            if (baralho.cartas.size() == 1){
-                cartasMao.add(baralho.cartas.get(i));
+            if (pack.carts.size() == 1){
+                cartHand.add(pack.carts.get(i));
                 break;
             }
-            var temp_carta = baralho.getRandomCard(baralho.cartas);
-            cartasMao.add(temp_carta);
-            baralho.cartas.remove(temp_carta);
+            var temp_cart = pack.getRandomCard(pack.carts);
+            cartHand.add(temp_cart);
+            pack.carts.remove(temp_cart);
         }
-        return cartasMao;
+        return cartHand;
     }
 
-    public String card(Carta carta) {
+    public ArrayList<Card> drawCards(int numCartas, ArrayList<Card> newPack) {
+        cartHand = new ArrayList<>();
+        boolean exit = true;
+        for (int i = 0; i < numCartas; i++) {
+            if (newPack.size() == 1){
+                cartHand.add(newPack.get(i));
+                break;
+            }
+            var temp_cart = pack.getRandomCard(newPack);
+            cartHand.add(temp_cart);
+            newPack.remove(temp_cart);
+        }
+        return cartHand;
+    }
+
+
+    public String card(Card carta) {
         return String.format("""
                  _ _ _
                 |     |
