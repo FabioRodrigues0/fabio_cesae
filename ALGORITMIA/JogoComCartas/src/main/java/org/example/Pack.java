@@ -17,7 +17,7 @@ public class Pack {
         return carts;
     }
 
-    public void setCartas() {
+    public void setCarts() {
         Naipe[] temp_naipes = Naipe.getNaipes().clone();
         SIZE_NAIPE = temp_naipes.length;
         Rank[] temp_ranks = Rank.getRanks().clone();
@@ -26,6 +26,21 @@ public class Pack {
         for (int i = 0; i < SIZE_NAIPE; i++) {
             for (int j = 0; j < SIZE_RANK; j++) {
                 carts.add(new Card(temp_naipes[i].getType(), temp_ranks[j].getType()));
+            }
+        }
+    }
+
+    public void setCarts(int size) {
+        Naipe[] temp_naipes = Naipe.getNaipes().clone();
+        SIZE_NAIPE = temp_naipes.length;
+        Rank[] temp_ranks = Rank.getRanks().clone();
+        SIZE_RANK = temp_ranks.length;
+        carts = new ArrayList<>();
+        for (int b = 0; b < size; b++) {
+            for (int i = 0; i < SIZE_NAIPE; i++) {
+                for (int j = 0; j < SIZE_RANK; j++) {
+                    carts.add(new Card(temp_naipes[i].getType(), temp_ranks[j].getType()));
+                }
             }
         }
     }

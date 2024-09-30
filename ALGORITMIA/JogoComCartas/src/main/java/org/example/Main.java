@@ -16,6 +16,13 @@ public class Main {
         newRoom.addPLayer();
 
         newRoom.drawFlop();
+        newRoom.giveCards();
+        newRoom.giveCards();
+        newRoom.playersShowCards();
+
+        newRoom.playersDiscardCard();
+        newRoom.playersShowCards();
+        RoomBlackJack blackjack = new RoomBlackJack();
         /*boolean exit = true;
         System.out.println("Indique o numero de Cartas que deseja pedir");
         int numCartas = read.nextInt();

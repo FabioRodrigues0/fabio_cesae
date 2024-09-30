@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pragrama_Exercicio_2</string>
+    <string name="segundo">Segundo</string>
+    <string name="primeiro">Primeiro</string>
+    <string name="exercicio_1">Exercicio 1</string>
+    <string name="exercicio_2">Exercicio 2</string>
+    <string name="exercicio_3">Exercicio 3</string>
+    <string name="exercicio_4">Exercicio 4</string>
+    <string name="exercicio_5">Exercicio 5</string>
+    <string name="voltar">Voltar</string>
+    <string name="button_login">Login</string>
+    <string name="button_numero">Par ou Impar</string>
+    <string name="text_password">Insert Password</string>
+    <string name="text_username">Insert Username</string>
+    <string name="text_numero1">Numero 1</string>
+    <string name="text_numero2">Numero 2</string>
+</resources>

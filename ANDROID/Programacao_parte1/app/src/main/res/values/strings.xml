@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">03_Ex1</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="text_first_name" translatable="false">Primeiro Nome</string>
+    <string name="text_last_name" translatable="false">Ultimo Nome</string>
+    <string name="text_ola" translatable="false">Olá</string>
+    <string name="button_label_ola" translatable="false">Label Olá</string>
+    <string name="button_pop_ola" translatable="false">Popup Olá</string>
+
+</resources>

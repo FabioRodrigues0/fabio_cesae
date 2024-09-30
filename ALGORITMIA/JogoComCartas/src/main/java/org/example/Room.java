@@ -12,7 +12,7 @@ public class Room {
         listPlayers = new ArrayList<>();
         roomPack = new Pack();
         draw = new Draw();
-        roomPack.setCartas();
+        roomPack.setCarts();
     }
 
     void addPLayer() {
@@ -41,9 +41,28 @@ public class Room {
     }
 
     void drawFlop(){
-        ArrayList<Card> flop = draw.drawCards(3, roomPack.carts);
-        for(Card card : flop){
+        for(Card card : draw.drawCards(3, roomPack.carts)){
             System.out.println(draw.card(card));
+        }
+    }
+
+    void giveCards(){
+        for(Player player : listPlayers){
+                player.drawCard(draw.drawCards(1, roomPack.carts));
+        }
+    }
+
+    void playersShowCards(){
+        for(Player player : listPlayers){
+            System.out.println(player.nickname + ": ");
+            player.showHand(draw);
+            System.out.println();
+        }
+    }
+
+    void playersDiscardCard(){
+        for(Player player : listPlayers){
+            player.discardCard();
         }
     }
 }

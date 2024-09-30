@@ -1,15 +1,16 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Draw {
-    private ArrayList<Card> cartHand;
+    private Collection<Card> cartHand;
     Pack pack;
     public Draw() {
         pack = new Pack();
-        pack.setCartas();
+        pack.setCarts();
     }
-    public ArrayList<Card> hand(int numCartas) {
+    public Collection<Card> hand(int numCartas) {
         cartHand = new ArrayList<>();
         boolean exit = true;
         for (int i = 0; i < numCartas + 1; i++) {
@@ -24,7 +25,7 @@ public class Draw {
         return cartHand;
     }
 
-    public ArrayList<Card> drawCards(int numCartas, ArrayList<Card> newPack) {
+    public Collection<Card> drawCards(int numCartas, ArrayList<Card> newPack) {
         cartHand = new ArrayList<>();
         boolean exit = true;
         for (int i = 0; i < numCartas; i++) {
