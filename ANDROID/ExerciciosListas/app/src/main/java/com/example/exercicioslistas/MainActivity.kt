@@ -1,20 +1,29 @@
 package com.example.exercicioslistas
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.exercicioslistas.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private val binding by lazy {
+        ActivityMainBinding.inflate(layoutInflater)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        setContentView(binding.root)
+
+        val listUtilizadores = ArrayList<Utilizador>()
+
+        listUtilizadores.add(Utilizador("admin", "admin"))
+        listUtilizadores.add(Utilizador("user", "user"))
+        listUtilizadores.add(Utilizador("fabio", "fabio"))
+
+        binding.listItems.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listUtilizadores)
+
+        binding.listItems.setOnItemClickListener { parent, view, position, id ->
+            Toast.makeText(this, listUtilizadores.get(position).toString(), Toast.LENGTH_SHORT).show()
         }
     }
 }
