@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=ClasseB
+comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ ClasseA\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
+comment1.params=
+comment1.target=ClasseB()
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ ExercicioUm\r\n
+comment2.params=
+comment2.target=void\ calc()
+comment3.params=
+comment3.target=void\ mesagemError()
+comment4.params=num1\ num2
+comment4.target=int\ calc_subtrair(int,\ int)
+comment5.params=num1\ num2
+comment5.target=int\ calc_soma(int,\ int)
+numComments=6

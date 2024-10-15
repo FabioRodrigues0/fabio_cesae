@@ -47,6 +47,34 @@ function createRainbow() {
     });
 }
 
+function randomNumber() {
+    return Math.floor(Math.random() * 256);
+}
+
+function gerarCor() {
+    return `rgb(${randomNumber()}, ${randomNumber()}, ${randomNumber()})`
+}
+
+function addEvents() {
+    let btn_hello = document.querySelector("#hello");
+    let btn_goodbye = document.querySelector("#goodbye");
+    let btn_change_color = document.getElementById("change-color");
+
+    let paragrafo = document.querySelector("#new-color");
+
+    btn_hello.addEventListener('mouseover', function () {
+        alert('Olá');
+    });
+    btn_goodbye.addEventListener('mouseover', function () {
+        alert('Adeus!')
+    });
+    btn_change_color.addEventListener('click', function (event) {
+        let container = document.querySelector("#container");
+        let cor = gerarCor()
+        paragrafo.innerText = cor
+        container.style.backgroundColor = cor
+    })
+
 function formData() {
     let button = document.querySelector("#button-submit");
     button.addEventListener("click", (event) => {
@@ -65,5 +93,4 @@ function formData() {
         product.value = "";
         qnt.value = "";
     });
-
 }

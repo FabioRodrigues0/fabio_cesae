@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ClasseB
+comment0.text=\r\n\ Escreva\ uma\ descri\u00E7\u00E3o\ da\ classe\ ClasseB\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (um\ n\u00FAmero\ da\ vers\u00E3o\ ou\ uma\ data)\r\n
+comment1.params=
+comment1.target=ClasseB()
+comment1.text=\r\n\ Construtor\ para\ objetos\ da\ classe\ ClasseB\r\n
+comment2.params=y
+comment2.target=void\ printTotobola(java.lang.String)
+numComments=3
