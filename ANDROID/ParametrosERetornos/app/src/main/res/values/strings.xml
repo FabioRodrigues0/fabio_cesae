@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ParametrosERetornos</string>
+    <string name="text_splash">Bem vindo ao\n Exercicio Qualquer Coisa</string>
+    <string name="adress">Morada</string>
+    <string name="name">Nome</string>
+    <string name="phone">Telefone</string>
+    <string name="email">E-mail</string>
+    <string name="male">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="submit">Submit</string>
+    <string name="exercicio_1">Exercicio 1</string>
+    <string name="exercicio_2">Exercicio 2</string>
+    <string name="exercicio_3">Exercicio 3</string>
+    <string name="exercicio_4">Exercicio 4</string>
+    <string name="exercicio_5">Exercicio 5</string>
+    <string name="submit_ex_dois">Submit</string>
+    <string name="numero_1">Numero 1</string>
+    <string name="number_2">Number 2</string>
+    <string name="ex_4_list_name">Lista de Produtos</string>
+    <string name="ex_4_button">Efetuar pedido</string>
+</resources>

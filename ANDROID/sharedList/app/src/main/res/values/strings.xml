@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sharedList</string>
+    <string name="submit_note">Add Note</string>
+    <string name="text_note">Adicione notas</string>
+</resources>

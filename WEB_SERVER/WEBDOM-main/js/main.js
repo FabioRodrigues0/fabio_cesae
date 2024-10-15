@@ -47,6 +47,7 @@ function createRainbow() {
     });
 }
 
+<<<<<<< HEAD
 function randomNumber() {
     return Math.floor(Math.random() * 256);
 }
@@ -74,4 +75,25 @@ function addEvents() {
         paragrafo.innerText = cor
         container.style.backgroundColor = cor
     })
+=======
+function formData() {
+    let button = document.querySelector("#button-submit");
+    button.addEventListener("click", (event) => {
+        event.preventDefault();
+        let product = document.querySelector("#text-product");
+        let qnt = document.querySelector("#text-quantidadew");
+
+        let li = document.createElement('li')
+        let span = document.createElement('span')
+
+        span.innerHTML = `${product.value}: ${qnt.value}`;
+        li.appendChild(span);
+
+        let ul = document.querySelector("#list-products");
+        ul.appendChild(li);
+        product.value = "";
+        qnt.value = "";
+    });
+
+>>>>>>> 96b21e50240722a418bc4210678d333627988929
 }
