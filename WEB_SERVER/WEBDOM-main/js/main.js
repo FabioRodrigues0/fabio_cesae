@@ -47,7 +47,6 @@ function createRainbow() {
     });
 }
 
-<<<<<<< HEAD
 function randomNumber() {
     return Math.floor(Math.random() * 256);
 }
@@ -75,7 +74,7 @@ function addEvents() {
         paragrafo.innerText = cor
         container.style.backgroundColor = cor
     })
-=======
+
 function formData() {
     let button = document.querySelector("#button-submit");
     button.addEventListener("click", (event) => {
@@ -94,6 +93,4 @@ function formData() {
         product.value = "";
         qnt.value = "";
     });
-
->>>>>>> 96b21e50240722a418bc4210678d333627988929
 }
