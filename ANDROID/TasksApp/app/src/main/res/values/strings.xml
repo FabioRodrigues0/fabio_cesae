@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">TasksApp</string>
+    <string name="icon_app">Icon App</string>
+    <string name="list_tasks">Lista Tarefas</string>
+    <string name="list_products">Lista Produtos</string>
+    <string name="lista_de_compras">Lista de Compras</string>
+    <string name="remover_producto">Remover Producto</string>
+    <string name="novo_producto">Novo Producto</string>
+    <string name="voltar">Voltar</string>
+    <string name="button_remove_product">Botão Remover Produto</string>
+    <string name="button_add_product">Botão Adicionar Produto</string>
+    <string name="title_activity_tasks">TasksActivity</string>
+    <string name="base_time">00:00</string>
+    <string name="base_seconds">00</string>
+    <string name="lista_de_tarefas">Lista de Tarefas</string>
+    <string name="icone_de_abrir">Icone de abrir</string>
+    <string name="icon_de_fechar">Icon de fechar</string>
+    <string name="add_task">Adicionar uma Tarefa</string>
+    <string name="button_add_task">Botão de Adicionar uma tarefa</string>
+    <string name="remove_taks">Remover Tarefa</string>
+    <string name="button_remove_task">Botão Remover Tarefa</string>
+</resources>
